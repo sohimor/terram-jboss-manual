@@ -36,6 +36,7 @@ public class MemberRegistration {
    @Produces
    @Named
    public Member getNewMember() {
+	   log.info("testing out JREBEL");
       return newMember;
    }
 

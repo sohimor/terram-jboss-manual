@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	>
+
+<h:head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+	<!--  TODO: (Stephen) just for dev, this should be removed for PROD -->
+	<link rel="stylesheet" 
+		href="frameworks/bootstrap-2.0/css/bootstrap.css"
+		type="text/css" 
+		media="screen" />
+	
+	<link rel="stylesheet"
+		href="frameworks/bootstrap-2.0/css/lib/bootstrap-responsive.min.css"
+		type="text/css" 
+		media="screen" />
+		
+
+	<script type="text/javascript"
+		src="frameworks/jQuery/jquery-1.7.2.js"></script>
+
+	<script type="text/javascript" 
+		src="frameworks/bootstrap-2.0/js/bootstrap.min.js"></script> 
+	
+	<ui:insert name="custom-js">
+	
+	</ui:insert>
+</h:head>
+
+<h:body>
+
+	<div id="page">
+
+		<div id="header">
+			<ui:insert name="header">
+				<ui:include src="inc/header.xhtml" />
+			</ui:insert>
+		</div>
+
+		<div id="content" class="container">
+
+			<ui:insert name="content">
+				<ui:include src="inc/content.xhtml" />
+			</ui:insert>
+		</div>
+
+		<div id="footer">
+			<ui:insert name="footer">
+				<ui:include src="inc/footer.xhtml" />
+			</ui:insert>
+		</div>
+
+	</div>
+
+</h:body>
+</html>
